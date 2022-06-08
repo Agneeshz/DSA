@@ -14,5 +14,6 @@ freopen("output.txt","w",stdout);
     it=l1.erase_after(it);
     for(int x:l1)
         cout<<x<<" ";
+    cout<<"im in github";
     return 0;
 }
