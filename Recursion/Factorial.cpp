@@ -11,6 +11,7 @@ int factorial(int n, int prod)
     prod*=n;
     n-=1;
     factorial(n,prod);
+    return 0;
 }
 int main()
 {
