@@ -3,8 +3,8 @@ using namespace std;
 
 int getSum(int n)
 {
-    if(n==0)
-        return 0;
+    if(n<=1)
+        return n;
     return getSum(n-1)+getSum(n-2);
 }
 
