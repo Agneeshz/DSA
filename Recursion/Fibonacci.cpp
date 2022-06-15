@@ -14,7 +14,7 @@ int main()
     freopen("input.txt", "r", stdin);
     freopen("output.txt", "w", stdout);
 #endif
-    int n=4;;
+    int n=4;
     cout<<"getSum(n)";
     return 0;
 }
