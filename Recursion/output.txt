@@ -1,1 +1,7 @@
-2
+Move 1 from A to C
+Move 2 from Ato B
+Move 1 from C to B
+Move 3 from Ato C
+Move 1 from B to A
+Move 2 from Bto C
+Move 1 from A to C
