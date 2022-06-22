@@ -9,13 +9,18 @@ bool isPal(string &str)
         if(str[begin]!=str[end])
             return false;
         begin++;
-        end++;
+        end--;
     }
     return true;
 }
 
 int main()
 {
-
+#ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+#endif
+    string s;
+    cout<<isPal(s);
     return 0;
 }
