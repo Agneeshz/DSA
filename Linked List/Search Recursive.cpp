@@ -12,18 +12,23 @@ struct Node
     }
 };
 
-int Rsearch(Node *head, int x, int pos)
+int Rsearch(Node *head, int x)
 {
-    if(head==NULL)
+    if (head == NULL)
         return -1;
 
-    else if (head->data == x){
-        return pos;
+    else if (head->data == x)
+    {
+        return 1;
     }
-     
-    Rsearch(head->next, x,pos+1);
-
-    
+    else
+    {
+        int res = Rsearch(head->next, x);
+        if (res == -1)
+            return -1;
+        else
+            return (res + 1);
+    }
 }
 
 int main()
@@ -37,6 +42,6 @@ int main()
     Node *head = new Node(10);
     head->next = new Node(5);
     head->next->next = new Node(20);
-    cout << Rsearch(head, x,1);
+    cout << Rsearch(head, x);
     return 0;
 }
