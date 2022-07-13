@@ -11,6 +11,7 @@ struct Node
         key = k;
         left = right = NULL;
     }
+    int yes;
 };
 
 void iterativePreorder(Node *root)
