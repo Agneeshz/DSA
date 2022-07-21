@@ -1,4 +1,6 @@
 #ifndef ONLINE_JUDGE
     freopen("input.txt", "r", stdin);
+    freopen("error.txt", "w", stderr);
     freopen("output.txt", "w", stdout);
 #endif
+    cerr<<"time taken: "<<(float)clock()/CLOCKS_PER_SEC<<" secs"<<endl;
